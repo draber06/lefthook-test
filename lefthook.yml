@@ -5,7 +5,3 @@ pre-commit:
       files: git diff --name-only @{push}
       glob: "*.{js,ts}"
       run: npx eslint {files}
-    tests:
-      files: git diff --name-only @{push}
-      glob: "*.{js,ts}"
-      run: jest --findRelatedTests {files}
